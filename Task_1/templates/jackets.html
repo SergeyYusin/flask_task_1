@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block title %}
+куртки
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Куртки</h1>
+</div>
+{% for jack in jacke %}
+    <h4>{{ jack.jacket }}</h4>
+    <p>цена - {{ jack.prices }}p.</p>
+   <p>размер - {{jack.size}}.</p>
+   <p>цвет - {{ jack.colour }}.</p>
+    {% endfor %}
+{% endblock %}
